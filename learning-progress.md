@@ -1,7 +1,7 @@
 # Learning Progress
 | Phase | Description | Status | Notes |
 |------|-------------|--------|-------|
-| 1 | Repo & Trigger Strategy | In Progress | Scaffolding created |
+| 1 | Repo Repo & Trigger Strategy | In Progress Trigger Strategy | Done | Scaffolding created |
 | 2 | Dynamic Matrix | Not Started | |
 | 3 | Quality Gate | Not Started | |
 | 4 | Build & Artifacts | Not Started | |
