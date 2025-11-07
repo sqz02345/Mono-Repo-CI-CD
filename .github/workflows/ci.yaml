@@ -1,0 +1,33 @@
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'apps/**'
+      - 'libs/**'
+
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Where to deploy'
+        required: true
+        type: choice
+        options:
+          - staging
+          - production
+
+jobs:
+  ci:
+    name: CI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up environment
+        run: echo "Setting up environment"
+
+      - name: Run basic checks
+        run: |
+          echo "No build/test commands configured in this workflow."
+          echo "Replace this step with your project's build/test commands."
